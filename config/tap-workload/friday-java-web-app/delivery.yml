@@ -47,7 +47,7 @@ spec:
       - env:
         - name: JAVA_TOOL_OPTIONS
           value: -Dmanagement.endpoint.health.probes.add-additional-paths="true" -Dmanagement.health.probes.enabled="true" -Dserver.port="8080" -Dserver.shutdown.grace-period="24s"
-        image: acrnpiplatopstapeus201.azurecr.io/apps/friday-java-web-app-tap-workload@sha256:0fe0cb832903d9cdbd0b5d1d87eafcd48e855dadfd753a9811e31db3a11183af
+        image: acrnpiplatopstapeus201.azurecr.io/apps/friday-java-web-app-tap-workload@sha256:0bd53c95078dc24a2f67a4501702343f7674658e8bad3f13d88dd805af8903b4
         livenessProbe:
           httpGet:
             path: /livez
